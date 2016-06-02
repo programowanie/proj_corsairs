@@ -2,8 +2,8 @@
 
 ## Symulator Korsarzy 
 
-Celem symulacji jest walka okrętu korsarzy z okrętami kupieckimi. W tym celu stworzyłem klasy Ship oraz dziedziczące po klasie Ship klasy Trade_Ship oraz Corsairs_Ship. Parametrami okrętu są m.in:
--Hp
+Celem symulacji jest walka okrętu korsarzy z okrętami kupieckimi. W tym celu stworzyłem klasy Ship oraz dziedziczące po klasie Ship klasy Trade_Ship oraz Corsairs_Ship. Parametrami okrętu są m.in:\n
+-Hp\n
 -liczba żeglarzy
 -liczba armat
 -szczęście
