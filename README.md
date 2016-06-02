@@ -9,7 +9,8 @@ Celem symulacji jest walka okrętu korsarzy z okrętami kupieckimi. W tym celu s
 - szczęście
 - szybkość
 - złoto
- Korsarze po napotkaniu wrogiego okrętu rozpoczynają walkę. Jeśli uda im się wygrać starcie łupią statek kupiecki (zdobywając złoto) i posyłają go na dno. W przeciwnym razie korsarze zostają zniszczeni i symulacja zostaje zakończona.
+ 
+Korsarze po napotkaniu wrogiego okrętu rozpoczynają walkę. Jeśli uda im się wygrać starcie łupią statek kupiecki (zdobywając złoto) i posyłają go na dno. W przeciwnym razie korsarze zostają zniszczeni i symulacja zostaje zakończona.
 
 Mechanika walki:
 Jeśli szczęście okrętu jest większe od losowej wartości z przedziału <0-100> okręt trafia w przeciwnika. Wartość obrażenia jest zleżna od parametrów: liczba żeglarzy oraz liczba armat pomniejszona o wartość obrony zależnej od parametrów: szczęście oraz szybkość. Okręty atakują na zmianę dopóki jeden z nich zostanie zatopiony.
