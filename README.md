@@ -1,7 +1,17 @@
 # Janiszewski Mateusz 
 
-## Temat mojego projektu to: ‘Symulacja Korsarzy’. 
+## Symulator Korsarzy 
 
-Stworzę klasę: `okręt korsarzy` która będzie zawierać zmienne takie jak żywotność okrętu, zdolność ataku, obrony etc., a także metody służące do ataku, obrony etc. 
+Celem symulacji jest walka okrętu korsarzy z okrętami kupieckimi. W tym celu stworzyłem klasy Ship oraz dziedziczące po klasie Ship klasy Trade_Ship oraz Corsairs_Ship. Parametrami okrętu są m.in:
+-Hp
+-liczba żeglarzy
+-liczba armat
+-szczęście
+-szybkość
+-złoto
+Korsarze po napotkaniu wrogiego okrętu rozpoczynają walkę. Jeśli uda im się wygrać starcie łupią statek kupiecki (zdobywając złoto) i posyłają go na dno. W przeciwnym razie korsarze zostają zniszczeni i symulacja zostaje zakończona.
 
-Druga klasa to : port który będzie zawierać analogiczne zmienne i metody. Celem symulacji jest konfrontowanie przystani z okrętem. Jeśli okręt wygra starcie zbiera łupy (czyli ulepsza swoje statystyki), a przystań zostanie zniszczona. Następnie okręt atakuje kolejną przystań  itd. Symulacja kończy się, gdy okręt zostanie zniszczony.
+Mechanika walki:
+Jeśli szczęście okrętu jest większe od losowej wartości z przedziału <0-100> okręt trafia w przeciwnika. Wartość obrażenia jest zleżna od parametrów: liczba żeglarzy oraz liczba armat pomniejszona o wartość obrony zależnej od parametrów: szczęście oraz szybkość. Okręty atakują na zmianę dopóki jeden z nich zostanie zatopiony.
+
+Na koniec symulacji zostaje wyświetlony komunikat podsumowujący dokonania korsarzy.
