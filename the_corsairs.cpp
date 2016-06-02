@@ -10,12 +10,13 @@ Ship::Ship()
 	amount_guns=randomValue();
 	speed=randomValue();
 	luck=randomValue();
+	gold=0;
 }
 string Ship::getname(){};
 void Ship::description()
 {
-	printf("HP = %d || żeglarze = %d || armaty = %d || szybkość okrętu = %d || szczęście = %d \n"
-		,HP, amount_sailors, amount_guns, speed, luck);
+	printf("HP = %d || żeglarze = %d || armaty = %d || szybkość okrętu = %d || szczęście = %d || złoto = %d \n"
+		,HP, amount_sailors, amount_guns, speed, luck, gold);
 }
 string Trade_Ship::getname()
 {
@@ -34,6 +35,7 @@ Trade_Ship::Trade_Ship()
 {
 	Ship();
 	name_trade=Trade_Ship::getname();
+	gold=rand()%1000+100;
 }
 void Trade_Ship::trade_description()
 {
@@ -63,4 +65,8 @@ void Corsairs_Ship::corsairs_description()
 {
 	printf("^ %s || ",name_corsairs.c_str());
 	Ship::description();
+}
+void Corsairs_Ship::plunder(Trade_Ship &tr_ship)
+{
+	gold+=tr_ship.getGold();
 }
