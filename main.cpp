@@ -1,9 +1,10 @@
 // version 1.0
-
 #include <iostream>
+#include "trade_ship.h"
+#include "corsairs_ship.h"
 #include "the_corsairs.h"
 #define CONST 2
-//using namespace std;
+
 int main(int argc, char **argv)
 {
 	srand(time(NULL));

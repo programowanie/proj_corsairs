@@ -1,11 +1,14 @@
+#pragma once
 #include <stdio.h>
 #include <string>
 #include <vector>
 #include <ctime>
 #include <cstdlib>
 #include <unistd.h>
-using namespace std;
+#include <fstream>
+#include <cstdlib>
 
+using namespace std;
 
 class Ship
 {
@@ -24,32 +27,5 @@ public:
 };
 
 
-class Trade_Ship : public Ship
-{
-private:
-	vector <string> names_trade;
 
-public:
-	string name_trade;
-	Trade_Ship();
-	virtual string getname();
-	void trade_description();
-};
-class Corsairs_Ship : public Ship
-{
-private:
-	vector <string> names_corsairs;
-	int BaseHP;
-	int howmanykills=0;
 
-public:
-	string name_corsairs;
-	Corsairs_Ship();
-	void heal(){HP=BaseHP;}
-	virtual string getname();
-	void corsairs_description();
-	void addkill(){howmanykills++;}
-	int showkill(){return howmanykills;}
-	bool stillive();
-	void plunder(Trade_Ship &);
-};
